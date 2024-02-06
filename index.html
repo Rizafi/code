@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="/custom.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#0c0c0c] h-screen w-full p-3 text-[#b3b3b3]">
+    <aside class="h-[85%] flex flex-col w-80 gap-3">
+      <div class="top bg-[#1b1b1b] h-[30%] rounded-xl p-5">
+        <div class="logo">
+          <img src="/assets/logoname.png" alt="spotify-logo" class="h-7" />
+        </div>
+        <div class="item mt-3">
+          <ul class="flex flex-col gap-1">
+            <li
+              class="flex items-center clicked duration-300 hover:text-[#fafafa]"
+            >
+              <i class="bx bx-home-alt font-normal text-2xl"></i
+              ><a class="font-semibold ml-5 text-sm" href="#">Home</a>
+            </li>
+            <li class="flex items-center hover:text-[#fafafa] duration-300">
+              <i class="bx bx-search font-normal text-2xl"></i
+              ><a class="font-semibold ml-5 text-sm" href="#">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom bg-[#1b1b1b] h-[70%] rounded-xl p-5">
+        <div class="library flex justify-between items-center">
+          <div class="left flex items-center duration-300 hover:text-[#fafafa]">
+            <i class="bx bx-library font-normal text-3xl"></i
+            ><a class="font-semibold ml-3 text-base" href="#">Your Library</a>
+          </div>
+          <div class="right flex gap-4">
+            <i class="bx bx-plus font-normal text-2xl"></i>
+            <i class="bx bx-right-arrow-alt font-normal text-2xl"></i>
+          </div>
+        </div>
+        <div class="filter inline-block items-center">
+          <button class="bg-[#2e2e2e] flex rounded-[50%] w-8 h-8 items-center">
+            <i class="bx bx-x text-2xl mx-auto"></i>
+          <button class="bg-[#2e2e2e] flex rounded-[50%] w-8 h-8 items-center">
+            <i class="bx bx-x text-2xl mx-auto"></i>
+          <button class="bg-[#2e2e2e] flex rounded-[50%] w-8 h-8 items-center">
+            <i class="bx bx-x text-2xl mx-auto"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
